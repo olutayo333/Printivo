@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta>
+</head>
+		<style>
+			*{ box-sizing: border-box; margin: 0; padding: 0;  }
+			
+		.flex_container
+		{ display: flex; flex-wrap: wrap; align-items: center; justify-content: center;  }
+
+
+		
+		.flexcontainer2{ display: flex;  margin: 10px 70px }
+		.flexcontainer3 {width:60%; color:#384A62; font-size:25px; line-height: 36px; 
+							margin: 70px 70px; font-family:"DM Serif Display", serif; font-weight: 400px;  margin-bottom:30px; }
+		.flexcontainer4{background-color:#EDF6FD; display:flex; align-items:center; 
+							justify-content:space-around; padding-left:10px; color:#384A62;
+							font-family:"DM Serif Display", serif; font-size: 20px; letter-spacing: 1px; padding: 0px 50px 0px 50px; }
+
+		.flexcontainer5{background-color:#FFFFFF; display:flex; align-items:center; 
+							justify-content:space-around; padding-left:10px; color:#384A62;
+							font-family:"DM Serif Display", serif; font-size: 20px; letter-spacing: px; padding: 0px 50px 0px 50px; 
+						}
+		.flexcontainer6	{background-color:#F7F6F4; padding:80px 0px 30px 70px; font-style:"DM Serif Display", serif; color: #384a62; font-weight: 400; font-size: 25px; line-height: 36px; }
+
+		.flexcontainer7{ background-color:#F7F6F4; color: #384a62; display: flex; 
+						justify-content: space-around; align-items:center; padding-bottom:60px;}
+		.flexcontainer7 a { color:#384a62; font-family:"SF Pro", sans-serif; font-size:15px;
+							font-weight: 600; line-height: 23px; margin: 40px 10px 50px 1px; }
+
+		.flexcontainer8 { display: flex; justify-content: space-around; background-color:#384A62; 			  padding: 50px 0px 0px 70px; margin-bottom: 0px; }
+		.flexcontainer8 .print_ivo { font-family:"SF Pro", sans-serif; color:#ece8d9;
+						font-weight:600; line-height: 28px; font-size:18px; padding-bottom: 20px;
+									 }
+		.flexcontainer8 a { text-decoration:none; color:#ffffff; font-size:14px; line-height:20px;
+							font-weight: 600; letter-spacing: 1px; padding: 20px 0px 20px 0px;
+							margin-bottom: 20px; }
+		.flexcontainer8 img { width:60%; margin:0px 0px 0px 0px ! important; padding:0px 0px 0px 0px ! important;}
+		input[type=search]:focus {outline: none;}
+
+		footer{ background-color: #CBCAC8; height: 90px; color:#384a62; font-size: 16px;
+				text-align: center; line-height: 24px; font-weight: 400; padding:40px 0px 0px 0px;}
+
+		.box_text5{ text-align: left; background-color: white; width: 30%; margin:10px 0px 50px 0px; padding: 30px 10px 30px 30px; line-height:23px;  letter-spacing: 1px;
+					font-family: "SF Pro", sans-serif; font-size:15px; color:#677f9e;
+					}
+		.box_text5 a { text-decoration: none; color:#1DA1F2; }
+
+		.box_text5{ text-align: left; background-color: white; width: 30%; margin:10px 0px 50px 0px; padding: 30px 10px 30px 30px; line-height:23px;  letter-spacing: 1px;
+					font-family: "SF Pro", sans-serif; font-size:15px; color:#677f9e;
+					}
+
+			div.container_box
+		{
+			width: 21%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			text-align: center; display: inline-block; margin: 10px; padding-bottom: 10px;  
+		}
+		.box_text{ text-align: left; margin-left: 15px; color: rgb(112,128,149);
+					font-family: "SF Pro", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+					font-size: 16px; padding: 20px 0px; 
+				}
+		.box_text4{ text-align: left; background-color: white; width: 30%; margin:10px 0px 50px 0px; padding: 30px 10px 30px 30px; line-height:23px;  
+					font-family: "SF Pro", sans-serif; font-size: 15px; color: #384a62;
+					}
+		.box_text4 a { text-decoration: none; color:#1DA1F2; }
+
+		
+
+		.box_text button{ background-color: rgb(215,127,129); color: white; font-size: 14px; width: 75%; text-align: left;
+			border:none; border-radius: 5px; padding: 12px;  align-items: center; margin-left:3%; }
+		div.container_box a{ text-decoration: none; color:rgb(112,128,149); }
+		
+		.container_box { display: flex; width: 23%; transition: 1s }
+		.container_box:hover{ transform: scale(1.05); transition: 1s; }
+		.container_box img{ height: 220px; transition: 1s;}
+		.container_box img:hover{transform: scale() ; transition: 1s; }
+		
+
+			nav
+		{
+			display: flex; justify-content: space-between; background-color: #F7F6F4; 
+			align-items:center; width: 100%; color: #506683;
+		}
+		nav ul
+		{
+			display: flex; list-style-type: none;
+		}
+		nav ul li 
+		{
+			margin: 0px 10px; padding-left: 50px
+		}
+		.left_nav a{ color:#506683}
+		.right_nav ul li { margin: 6px 20px; justify-content: space-between;  }
+		.right_nav ul{align-items: center;} 
+		.right_nav{ align-items: center; margin: 6px 50px;    }
+
+		.box_text p{ padding: 5px; }
+
+		nav a
+		{
+			text-decoration: none; 
+		}
+
+		.nav2 ul{list-style:none; display:flex; justify-content:flex-end; justify-content: space-between; align-items: center; /*margin-left: 30px;*/ }
+		/*.nav2 {display: flex; height: 1000px;}*/
+		.nav2 ul li{ margin: 20px 10px;   }
+		.nav2 a{text-decoration: none; font-family: "SF Pro", sans-serif; color:#4b6382;
+				font-size: 15px; }
+		.nav2{ display: flex; justify-content:space-between; background-color:#ECE8D9; height:99px; position:sticky; top:0; width:100% }
+
+		.nav3
+		{
+			 font-family: "SF Pro", sans-serif;
+			font-size: 67px; color: #384a62;font-weight: 400; width: 100%; 
+			background-color:#ECE8D9; height: 300px; display: flex; justify-content: space-between;
+			padding: 30px 0px; padding-left: 50px;  
+		}
+
+		.handcard{width:100%; height: 100%}
+		#form1{font-size: 16px; font-family:"SF Pro", sans-serif; color:#384a62; font-weight:700;  }
+		
+		#search_bar{ width: 550px; height: 80px; border: none; border-top-left-radius:7px;
+						border-bottom-left-radius: 7px; margin-top: 10px; }
+
+		::-webkit-input-placeholder{ text-align: left; font-size: 16px; font-family: "SF Pro", sans-serif; color: #B0C8DE; font-weight: 400;  }
+		
+		.mid_nav
+		{
+			display:flex; justify-content: space-between; padding:20px 80px; color:#384a62; 
+			font-family: "DM Serif Display", serif; font-size: 30px; font-weight: 400px; margin-top: 50px;
+		}
+
+
+	</style>
+<body>
+	<nav>
+		<ul class="left_nav"> 
+				<li> <a style="color: #506683" href="" > Cost Calculator </a> </li> 
+			 	<li > <a href="">Discover Stores </a> </li> 
+			 	<li > <a href="">Track Orders </a> </li> 
+		</ul>
+		<ul class="right_nav">
+				<li >Need help? Call:<a style="color: #1DA1F2" href="">+2348091084333</a> </li>
+			 	<li style="padding-right: 50px;" ><a href=""> <img  src="wa.svg"> </a> </li>
+			 	<li style="align-items: center; border: 1px solid #CBCAC8; border-radius: 40px; padding: 10px 10px;" ><a href=""><img src="nigeriaflag.svg"> Nigeria</a> </li>
+			 	<li > <a href=""> </a> </li>
+		</ul>
+	</nav>
+	<section class="nav2">
+		<div>
+			<img src="printivo_logo.png" style="width:250px; height:100px; padding-top: 5px; padding-left: 20px;">
+		</div>
+		<div>
+			<ul>
+				<li style="padding-top: 15px;"><a href="" > All Products </a> </li> 
+			 	<li style="padding-top: 15px;" ><a href="">Become a Reseller</a> </li> 
+			 	<li style="padding-top: 15px;" ><a href="">Merch Store </a> </li> 
+			 	<li style="padding-top: 15px;" ><a href="">Marketplace</a> </li>
+			 	<li style="padding-top: 15px;"><a href="" style="color: #d77f81">Sign in</a> </li>
+			 	<li style="padding-top: 15px;"><a href="">Create Account</a> </li>
+			 	<li > <a href=""> <img  src="cart.png" style="height: 50px; width: 50px; padding-bottom: 0px;">  </a> </li>
+			</ul>
+		</div> 
+	</section>
+	
+	<section class="nav3">
+		<div> Quality Prints 
+			<p><h3 style="font-size: 24px; color: #708095">Shipped to your doorstep</h3></p>
+			<form id="form1"> <br><br>
+				<label id="search_label"> what will you like to print today?  </label> 
+				
+				<div style="display: flex"> 
+					<input type="search" name="" id="search_bar" placeholder="    Search For Business Cards,T-shirts, Mugs, etc  "> 
+					<button style="background-color:white; border:none; border-top-right-radius:7px; border-bottom-right-radius: 7px; padding-right:15px; margin-top: 10px;" 
+					type="submit"> <a href=""><img src="search.svg"></a> </button>
+				</div>
+			</form>
+		</div>
+		<div>
+			<img class="handcard" src="card3.png">
+		</div>
+	</section>
+
+	<marquee width="100%" direction="left" height="70px" background-color="#F3B1CD"> </marquee>
+	
+
+	<section class="flex_container">
+
+	<div class="container_box">
+		<a href=""> 
+			<img class="nav_img" src="printi.png" style="width:100%;">
+		<div class="box_text"> 
+			<p><b style="color: #384A7B;">Two-sided Business Cards</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#9,700</b> <sub style="color:rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b> Browse Two-sided Bu... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="_flyer.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">A5 flyers (Single Sided)</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#16,500</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b> Browse A5 flyers (S... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="_social-media.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Round Stickers (3.5" Diameter)</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#10,900</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b>Browse Round Stick (... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="_social-media2.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Simple Mugs</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#3,000</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 1</sub> </h3></P> </a>
+			<p> <button> <b> Browse Simple Mugs > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="_12.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Postcards (A6)</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#14,200</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 50</sub> </h3></P> </a>
+			<p> <button> <b> Browse Postcards (...> </b></button> </p>
+		</div>
+	</div>
+
+<div class="container_box">
+		<a href=""> 
+			<img src="big rollup banner.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Roll Up Banners (Big Base)</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#35,200</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 1</sub> </h3></P> </a>
+			<p> <button> <b> Roll Up Banners (B... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="_product5.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">A2 Posters</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#45,000</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b>Browse A2 Posters > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="-printing.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Trifold Brochures</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#30,400</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b> Browse Trifold Broc... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="-printing.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Trifold Brochures</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#30,400</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b> Browse Trifold Broc... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="card.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Landscape ID Cards</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#2,000</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 1</sub> </h3></P> </a>
+			<p> <button> <b> Landscape ID... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="White-tshirt.png" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">Off White T-shirts</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#3,800</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 1</sub> </h3></P> </a>
+			<p> <button> <b> Off White T-... > </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="printivo.jpeg" style="width:100%;">
+		<div class="box_text">
+			<p><b style="color: #384A7B;">A4 Courier Bags</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#17,600</b> <sub style="color: rgb(112,128,149); font-size: 14px;">per 100</sub> </h3></P> </a>
+			<p> <button> <b> Browse A4 Courier B... > </b></button> </p>
+		</div>
+	</div> <br> <br>
+
+</section>
+	<div class="mid_nav">
+		<p><b>Popular Categories</b></p> <span> <a style="text-decoration:none; font-size:16px; color:#D77F81; font-weight: 600" href=""> See All Categories </a> </span>
+	</div> 
+
+<section class="flexcontainer2">
+	<div class="container_box">
+		<a href=""> 
+			<img src="merrychristmass.png" style="width:100%;">
+		<div class="box_text"> 
+			<p><b style="color: #384A7B;">Greeting Cards</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#19,000</b> <sub style="color:rgb(112,128,149); font-size: 14px;">per 50</sub> </h3></P> </a>
+			<p> <button> <b> Browse Greeting Car...> </b></button> </p>
+		</div>
+	</div>
+
+	<div class="container_box">
+		<a href=""> 
+			<img src="mariamsthread.png" style="width:100%;">
+		<div class="box_text"> 
+			<p><b style="color: #384A7B;">Stickers</b></p> 
+			<p style="font-size: 13px;"> <b> STARTING AT </b> </p> 
+			<P><h3><b style="color: #384A7B; font-size: 20px">#5,400</b> <sub style="color:rgb(112,128,149); font-size: 14px;">per 75</sub> </h3></P> </a>
+			<p> <button> <b> Browse Stickers > </b></button> </p>
+		</div>
+	</div>
+
+</section>
+<section class="flexcontainer3">
+	<h1>Nigeria’s No. 1 online print shop 👑 </h1> 
+<p style="font-size:20px; font-weight:600; letter-spacing:3px; " > Our print services and solutions are trusted by these brands and </p> <p style="font-size:20px; font-weight:600;letter-spacing:3px;">over 15,000 other businesses in Nigeria. </p> <br><br>
+<img  src="Group_61_h8vxko.png">
+</section>
+		
+	<h1  style="background-color:#EDF6FD; padding: 70px 70px; ">What Customers Say About Us 🙌🏾</h1> 
+
+<section class="flexcontainer4">
+	
+		<div class="box_text4"> 
+			<p> Amina Ebele <a href=""> @DeliciousAmina </a> </p> <br>
+			<p>I am now the unofficial <a href=""> @Printivo </a> ambassador. What these guys just pulled to ensure I got my menu cards today is stunning! </p>
+		</div>
+	
+		<div class="box_text4"> 
+			<p> Oluwatosin <a href=""> @tosingirlfx </a> </p> <br>
+			<p><a href=""> @Printivo </a> delivered my mugs in 24hrs.</p> 
+			<p> Thank you so much! It's nice doing business with you. More to come. </p>
+		</div>
+	
+		<div class="box_text4">  
+			<p> Oluwatosin <a href="">  @olgablark </a> </p> <br>
+			<p>These guys <a href=""> @Printivo </a> are really awesome 
+			<p>and affordable. Excellent customer service and delivery too. Thank you. </p>
+		</div>
+	
+</section>
+
+<section class="flexcontainer5">
+	
+		<div class="box_text5"> 
+			<p style="font-size:30px; color:#384a62"> You can count on us for:</p> <br>
+			<p style="color:#384a62; line-height: 23px;">Fast Turnaround Within Days</p>
+			<p>Your order gets to you within 3-</p>
+			<p>7 working days via DHL or our </p>
+			<p> very own Printivo Direct. </p>
+		</div>
+	
+		<div class="box_text5"> 
+			<p style="color: #384A7B"> <b> 100% Top Quality </b> </p>
+			<p> Only the finest materials, </p> 
+			<p> machines and people will be </p>
+			 <p> involved in fulfilling your order. </p>
+		</div>
+	
+		<div class="box_text5">  
+			<p style="color: #384A7B"> <b>Affordable Services</b></p>
+			<p> All products are adequately </p> 
+			<p> priced to ensure you get value </p> 
+			<p> for your money at all times. </p>
+		</div>
+</section>
+
+<section class="flexcontainer6">
+	<h1> Our amazing work got noticed by: </h1>
+</section>
+
+<section class="flexcontainer7">
+	<div> <p><img src="tech_crunch.svg"></p> 
+			<p> <a href=""> Read the article here </a> </p>
+	</div>
+	<div> <p><img src="FORBES.svg"></p> 
+			<p> <a href=""> Read the article here </a> </p>
+	</div>
+	<div> <p><img src="Techpoint_Logo.png"></p> 
+			<p> <a href=""> Read the article here </a> </p>
+	</div>
+	<div> <p><img src="techcabal.svg"></p> 
+			<p> <a href=""> Read the article here </a> </p>
+	</div>
+	<div> <p><img src="CNN.svg"></p> 
+			<p> <a href=""> Read the article here </a> </p>
+	</div>	
+</section>
+
+<section class="flexcontainer8">
+	<div>
+		<p class="print_ivo"> Printivo </p>
+		<p> <a href=""> About us</a> </p>
+		<p><a href="">Contact</a></p>
+		<p> <a href=""> Track Order</a> </p>
+		<p><a href="">Printivo Promise</a></p>
+		<p> <a href=""> Printivo Blog</a> </p>
+		<p><a href="">Career </a></p>
+	</div>
+
+	<div>
+		<p class="print_ivo"> Help and Information </p>
+		<p> <a href=""> Paper Quality </a> </p>
+		<p><a href="">Privacy Policy</a></p>
+		<p> <a href=""> Terms and Condition </a> </p>
+		<p><a href="">Font Licenses</a></p>
+		<p> <a href=""> Shipping and delivery</a> </p>
+	</div>
+
+	<div>
+		<p class="print_ivo"> Make Money </p>
+		<p> <a href=""> Refer a freind and earn N1,000 </a> </p>
+		<p><a href="">Become a Reseller</a></p>
+		<p><a href="">Merch Store</a></p>
+	</div>
+
+	<div>
+		<p class="print_ivo"> <span style="color:#384A62"> ... </span> <span style="color:#ECE8D9">Follow Us </span> </p> 
+		<p><a href=""> <img src="social_media_icons.png"></a> </p>
+		<p><a href=""><img src="Accepted_payment.png"></a></p>
+	</div>
+</section>
+
+<footer>
+	<p>Copyright © 2023 Printivo. All rights reserved.</p>
+</footer>
+</body>
+</html>
